@@ -52,6 +52,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjects\AddressPage.cs" />
+    <Compile Include="PageObjects\Headr.cs" />
+    <Compile Include="PageObjects\MainPage.cs" />
+    <Compile Include="Tests\CheckingAddAddressAbility.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Framework\Drivers.cs" />
     <Compile Include="Framework\Selenium.cs" />
