@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 
+
 namespace Team8.PageObjects
 {
     public class MainPage: Base
