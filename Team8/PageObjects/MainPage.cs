@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace Team8.PageObjects
 {
@@ -11,6 +6,7 @@ namespace Team8.PageObjects
     {
 
         private static readonly By addressButton = By.XPath("//*[@id='footer_account_list']/li[4]/a");
+        private static readonly By contacts = By.XPath("//*[@id='link-static-page-contact-2']");
 
         public MainPage(IWebDriver driver) : base(driver) { }
 
@@ -19,5 +15,12 @@ namespace Team8.PageObjects
             Driver.FindElement(addressButton).Click();
             return new AddressPage(Driver);
         }
+
+        public ContactUsPage ClickOnContacts()
+        {
+            Driver.FindElement(contacts).Click();
+            return new ContactUsPage(Driver);
+        }
+
     }
 }
